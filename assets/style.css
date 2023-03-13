@@ -1,0 +1,35 @@
+
+body{
+    background-color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 30px;
+}
+
+
+.container{
+    margin: 0;
+    padding: 50px;
+    width: 50%;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(45, 68, 78);
+    display: flex;
+    border-radius: 10px;
+}
+
+.caixaCalculo{
+    background-color: #717b83;
+    width: 600px;
+    border: 2px solid #0918f5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.inputs{
+    padding: 10px;
+}

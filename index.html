@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/scripts.js"></script>
+    <title>Calculo Financeiro</title>
+</head>
+
+    
+<body>
+    <div class="container">
+        <div class="caixaCalculo">
+            <h1>Calculo Financeiro</h1>
+            <div class="inputs">
+        Entradas totais  <input class="input" type="number" placeholder="Digite a quantidade de entradas mensais" id="inputEntradasTotais"><br>
+        Vendas Mensais <input class="input" type="number" placeholder="Digite a quantidade de vendas mensais" id="inputEntradasCaixa"><br>
+        Valor mensal  <input class="input"  type="number" placeholder="Digite a sua renda bruta mensal" id="inputVendas"><br><br>
+        <button onclick="calcularGanho()">Calcular Quanto poderia estar ganhando</button><br><br>
+        <span class="spanTexto">Responda conforme seu estabelecimento e suas filas:</span><br><br>
+
+        <input type="radio" name="filas" id="inputSP">Meu estabelecimento não sofre com filas<br>
+        <input type="radio" name="filas" id="inputPP">Meu estabelecimento sofre pouco com filas<br>
+        <input type="radio" name="filas" id="inputAP">Meu estabelecimento tem alguns problemas com filas<br>
+        <input type="radio" name="filas" id="inputMP">Meu estabelecimento tem muitos problemas com filas<br><br>
+            </div>
+
+        <div id="exibeCalculo"></div>
+        </div>
+    </div>
+</body>
+</html>
