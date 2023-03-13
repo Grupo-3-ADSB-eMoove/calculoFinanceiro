@@ -14,21 +14,20 @@
     <div class="container">
         <div class="caixaCalculo">
             <h1>Calculo Financeiro</h1>
-            <div class="inputs">
-        Entradas totais  <input class="input" type="number" placeholder="Digite a quantidade de entradas mensais" id="inputEntradasTotais"><br>
-        Vendas Mensais <input class="input" type="number" placeholder="Digite a quantidade de vendas mensais" id="inputEntradasCaixa"><br>
-        Valor mensal  <input class="input"  type="number" placeholder="Digite a sua renda bruta mensal" id="inputVendas"><br><br>
-        <button onclick="calcularGanho()">Calcular Quanto poderia estar ganhando</button><br><br>
-        <span class="spanTexto">Responda conforme seu estabelecimento e suas filas:</span><br><br>
+            <div class="textInputWrapper">
+            Total de entradas: <input class="textInput" type="number" placeholder="Digite a quantidade de entradas mensais" id="inputEntradasTotais"><br>
+            Total de vendas: <input class="textInput" type="number" placeholder="Digite a quantidade de vendas mensais" id="inputEntradasCaixa"><br>
+            Valor das vendas: <input class="textInput"  type="number" placeholder="Digite a sua renda bruta mensal" id="inputVendas"><br><br>
+        </div>
+            <button onclick="calcularGanho()" class="button-name">Calcular Estimativa de Ganhos</button><br><br>
+        <span>Responda conforme seu estabelecimento e suas filas:</span><br><br>
 
         <input type="radio" name="filas" id="inputSP">Meu estabelecimento não sofre com filas<br>
         <input type="radio" name="filas" id="inputPP">Meu estabelecimento sofre pouco com filas<br>
         <input type="radio" name="filas" id="inputAP">Meu estabelecimento tem alguns problemas com filas<br>
         <input type="radio" name="filas" id="inputMP">Meu estabelecimento tem muitos problemas com filas<br><br>
-            </div>
-
-        <div id="exibeCalculo"></div>
         </div>
     </div>
+    <div id="exibeCalculo" class="calculoP"></div>
 </body>
 </html>
